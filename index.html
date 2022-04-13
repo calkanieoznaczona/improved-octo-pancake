@@ -75,8 +75,29 @@
 									<ul class="actions special">
 										<li><a href="https://coinmarketcap.com/pl/currencies/dogecoin/" class="button"> cena na coinmarketcap</a></li>
 									</ul>
+                                    
+                                <form id="liczdoge"><h3>Przelicznik</h3>
+                                    <p class="kupuje">Nie jesteś pewny ile DOGE uda ci się kupić za dostępne środki? Sprawdź to wpisując wartość i klikając <strong>LICZ</strong>!</p>
+                                <label>Dostępne środki w PLN:<br><input type="number" id="plndoge"> </label><br>
+                                <label>Ilość DOGE możliwa do zakupienia:<br><span class="krypto" id="ildoge"></span></label><br>
+                                
+                                 <button type="button" id="guzikdoge">LICZ</button></form>
+                                    
+                                <script>
+                                var guzikdoge = document.getElementById("guzikdoge");
+                                var iledoge = function() {
+                                    var ildoge = document.getElementById("ildoge");
+                                    var plndoge =document.getElementById("plndoge").value;
+                                    ildoge.innerHTML= plndoge/0.602793;
+                                
+                                };
+                                guzikdoge.addEventListener('click', iledoge);
+                            
+                                </script>
+                                    
 								</article>
-								
+                                
+                                
 								<article>
 									<header>
 										<span class="date">MONA</span>
@@ -87,6 +108,25 @@
 									<ul class="actions special">
 										<li><a href="https://coinmarketcap.com/pl/currencies/monacoin/" class="button"> cena na coinmarketcap</a></li>
 									</ul>
+                                    
+                                    <form id="liczmona"><h3>Przelicznik</h3>
+                                    <p class="kupuje">Nie jesteś pewny ile MONA uda ci się kupić za dostępne środki? Sprawdź to wpisując wartość i klikając <strong>LICZ</strong>!</p>
+                                <label>Dostępne środki w PLN:<br><input type="number" id="plnmona"> </label><br>
+                                <label>Ilość MONA możliwa do zakupienia:<br><span class="krypto" id="ilmona"></span></label><br>
+                                
+                                 <button type="button" id="guzikmona">LICZ</button></form>
+                                    
+                                <script>
+                                var guzikmona = document.getElementById("guzikmona");
+                                var ilemona = function() {
+                                    var ilmona = document.getElementById("ilmona");
+                                    var plnmona =document.getElementById("plnmona").value;
+                                    ilmona.innerHTML= plnmona/3.86;
+                                
+                                };
+                                guzikmona.addEventListener('click', ilemona);
+                            
+                                </script>
 								</article>
 								
 								<article>
