@@ -243,7 +243,7 @@ input, select, textarea {
 		padding: 0.5rem 0 0.5rem 2rem;
 	}
 
-	code {
+	cFode {
 		border: solid 2px;
 		font-family: "Courier New", monospace;
 		font-size: 0.9rem;
@@ -264,6 +264,17 @@ input, select, textarea {
 			padding: 1rem 1.5rem;
 			overflow-x: auto;
 		}
+    span.krypto {
+		display: block;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-weight: 100;
+		line-height: 1.5;
+		letter-spacing: 0.075em;
+		font-size: 1.25rem;
+		text-transform: uppercase;
+		margin: 0 0 0.75rem 0;
+        text-align: center;
+	}
 
 	hr {
 		border: 0;
@@ -2310,6 +2321,12 @@ input, select, textarea {
 					}
 
 		}
+    .kupuje{
+        text-align:center;
+        font-size:0.8rem;
+
+    }
+
 
 	label {
 		display: block;
@@ -2321,6 +2338,8 @@ input, select, textarea {
 		text-transform: uppercase;
 		margin: 0 0 0.75rem 0;
 	}
+
+ 
 
 		@media screen and (max-width: 980px) {
 
@@ -3395,7 +3414,8 @@ input, select, textarea {
 			font-style: italic;
 			margin-top: -0.25rem;
 			text-align: center;
-		}
+ 		}
+        
 
 		#intro + #header {
 			margin-top: -20rem;
